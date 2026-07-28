@@ -50,7 +50,7 @@ CPU
 
 Each level is faster but smaller than the one below it.
  **Basically:**
-
+```text
  Program Stored on SSD
         │
         ▼
@@ -61,7 +61,7 @@ RAM (Process Memory)
         │
         ▼
 CPU Executes Instructions
-
+```
 ---
 
 # 2. CPU
@@ -189,6 +189,7 @@ It is between hardware and the operating system.
 Examples:
 
 * BIOS -Basic Input/Output System (old computers use this firmware)
+```text
        
        Power Button
           │
@@ -206,9 +207,10 @@ Examples:
           │
           ▼
     Windows Starts
-
+```
 
 * UEFI -Unified Extensible Firmware Interface (modern computers and laptops use this firmware)
+```text
 
                            Power Button
                                  │
@@ -227,7 +229,7 @@ Examples:
                                  ▼
                            Operating System Starts
 
-
+```
 * BIOS and UEFI are both firmware. Their job is to start the computer before the operating system (Windows, Linux, etc.) begins running.
 
 * ROM starts the computer.
@@ -291,7 +293,9 @@ Characteristics:
 # 7. Process Memory Layout
 
 When a program starts, the operating system loads it into RAM.
+
 **Modern RAM**
+
 ```text
 High Address
 +--------------------------------+
@@ -317,7 +321,9 @@ Low Address
 ```
 Everything above exists inside RAM.
 
-**old RAM**              
+**old RAM**  
+
+```text           
 +----------------------+
 | Code Segment         |1000(address)
 +----------------------+
@@ -327,7 +333,7 @@ Everything above exists inside RAM.
 +----------------------+
 | Stack                |15000
 +----------------------+
-
+```
 ---
 
 # 8. Code Segment
@@ -473,11 +479,13 @@ Stack memory is managed automatically.
 
 * int* p = new int(50);
 
+```text
 Stack                      Heap
 ┌────────────┐
 │ p          │──────────────►┌───────────┐
 │ 0x5000     │               │ value=50  │
 └────────────┘               └───────────┘
+```
 
 ---
 
