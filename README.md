@@ -294,7 +294,7 @@ Characteristics:
 
 When a program starts, the operating system loads it into RAM.
 
-**Modern RAM**
+**Modern RAM:**
 
 ```text
 High Address
@@ -321,7 +321,7 @@ Low Address
 ```
 Everything above exists inside RAM.
 
-**old RAM**  
+**Old RAM:**  
 
 ```text           
 +----------------------+
